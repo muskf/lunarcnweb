@@ -1,9 +1,16 @@
 {
-  "functions":{
-  "api/*.php":{
-    "runtime":"vercel-php@0.6.0"
-  }
-   "api/minad/*.php":{
-    "runtime":"vercel-php@0.6.0"
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.6.0"
+    },
+    "api/minad/*.php": {
+      "runtime": "vercel-php@0.6.0",
+      "build": {
+        "command": "composer install --no-dev",
+        "env": {
+          "COMPOSER_CACHE_DIR": "/tmp/cache/composer"
+        }
+      }
     }
   }
+}
