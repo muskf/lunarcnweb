@@ -14,7 +14,7 @@ if(!empty($announcement)) {
 // 如果公告内容为空，则读取文件中的最新公告内容并返回
 if(file_exists('minad/announcement.txt')) {
 	$file = fopen('announcement.txt', 'r');
-	$announcement = fread($file, filesize('announcement.txt'));
+	$announcement = fread($file, filesize('minad/announcement.txt'));
 	fclose($file);
 	echo $announcement;
 } else {
