@@ -3,9 +3,7 @@
   "api/*.php":{
     "runtime":"vercel-php@0.6.0"
   }
-   "api/minad/*.php:{
+   "api/minad/*.php":{
     "runtime":"vercel-php@0.6.0"
     }
   }
-}
-}
