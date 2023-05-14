@@ -23,6 +23,6 @@ if ($httpcode === 200) {
 } else {
   http_response_code($httpcode);
   error_log("Failed to get latest release version for {$owner}/{$repo}");
-  echo "document.write(\"v2.11.2-fix20\")";   //not auto
+  echo "document.write(\"v2.11.2-fix20\")";//not auto
 }
 ?>
