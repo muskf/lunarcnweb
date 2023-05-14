@@ -19,7 +19,7 @@ curl_close($ch);
 if ($httpcode === 200) {
   $data = json_decode($response, true);
   $version = htmlspecialchars($data['tag_name'], ENT_QUOTES, 'UTF-8');
-  echo "document.write(\"$version\")"
+  echo "document.write(\"$version\")";
 } else {
   http_response_code($httpcode);
   error_log("Failed to get latest release version for {$owner}/{$repo}");
