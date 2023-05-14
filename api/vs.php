@@ -28,7 +28,7 @@ if ($httpcode === 200) {
 
   $version = htmlspecialchars($data['tag_name'], ENT_QUOTES, 'UTF-8');
 
-  echo $version
+  echo $version;
 
 } else {
 
@@ -36,7 +36,7 @@ if ($httpcode === 200) {
 
   error_log("Failed to get latest release version for {$owner}/{$repo}");
 
-  echo "v2.11.2-fix20"
+  echo "v2.11.2-fix20";
 
 }
 
