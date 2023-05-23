@@ -1,7 +1,7 @@
 <?php
 $user_agent = $_SERVER['HTTP_USER_AGENT'];
 $allowed_user_agent = "liquidlunar";
-$check_uuid_file = "checkuuid.txt";
+$check_uuid_file = "uuid.txt";
 
 // 验证请求参数
 $uuid = $_GET['uuid'] ?? '';
