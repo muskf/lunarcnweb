@@ -36,7 +36,7 @@ if ($httpcode === 200) {
 
   error_log("Failed to get latest release version for {$owner}/{$repo}");
 
-  echo "v2.15.1";
+  echo "v2.15.1-next-gen-b1";
 
 }
 
