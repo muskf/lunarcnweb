@@ -6,4 +6,4 @@
 
 [wiki](https://github.com/CubeWhyMC/LunarClient-CN/wiki)
 
-[official webside](https://lunarcn.top)
+[official website](https://lunarcn.top)
