@@ -19,4 +19,5 @@ switch ($format) {
             echo $server;
             echo "\n";
         }
+        break;
 }
