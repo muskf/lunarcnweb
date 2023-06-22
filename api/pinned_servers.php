@@ -1,14 +1,9 @@
 <?php
 $servers = [
     "QbyPixel" => "mc.cubewhy.eu.org",
-    "test" => "test"
 ]; // LiquidLunar 置顶服务器
 
-if (in_array("format", $_GET)) {
-    $format = $_GET["format"];
-} else {
-    $format = "raw";
-}
+$format = $_GET["format"];
 
 switch ($format) {
     case "json":
