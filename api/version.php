@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: text/plain; charset=utf-8');
 
-$owner = 'CubeWhy';
+$owner = 'CubeWhyMC';
 $repo = 'LunarClient-CN';
 
 $url = "https://api.github.com/repos/{$owner}/{$repo}/releases/latest";

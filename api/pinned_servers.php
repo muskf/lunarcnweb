@@ -1,7 +1,7 @@
 <?php
 $servers = [
     "QbyPixel" => "mc.cubewhy.eu.org",
-    "Hypixel" => "mc.hypixel.net"
+//    "Hypixel" => "mc.hypixel.net"
 ]; // LiquidLunar 置顶服务器
 
 $format = $_GET["format"];
