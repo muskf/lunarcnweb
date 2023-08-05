@@ -25,6 +25,36 @@ body {
     z-index: 100;
 }
 
+.sponsors {
+  background-color: #1f242d;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.sponsor-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sponsor-list h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sponsor-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sponsor-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* 调整赞助商名单的样式和排版 */
+
 .logo {
     font-size: 25px;
     color: #fff;
