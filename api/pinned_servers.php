@@ -1,6 +1,7 @@
 <?php
 $servers = [
     "QbyPixel" => "mc.cubewhy.eu.org",
+    "HLN-Hypixel Boost": "bpc-jp.hln-boost.eu.org"
 //    "Hypixel" => "mc.hypixel.net"
 ]; // LiquidLunar 置顶服务器
 
