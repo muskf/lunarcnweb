@@ -11,6 +11,34 @@
     <link rel="stylesheet" href="src/css/style.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <title>LunarCN官网</title>
+    <style>/* 样式可根据需求进行修改 */
+.language-selector {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color:black
+}
+
+.label {
+    margin-right: 10px;
+}
+
+    </style>
+    <script>// 获取浏览器的语言设置
+var userLang = navigator.language || navigator.userLanguage;
+
+// 将语言设置转换为小写，以便比较
+userLang = userLang.toLowerCase();
+
+// 如果语言是英文，就跳转到/en文件夹
+if (userLang.indexOf("en") !== -1) {
+    window.location.href = "en"; // 修改此处的路径为实际的/en文件夹路径
+}
+    </script>
     <script>
 var _hmt = _hmt || [];
 (function() {
@@ -26,6 +54,41 @@ var _hmt = _hmt || [];
   <body>
     <header class="header">
       <a href="#" class="logo" alt="LunarCN">LunarCN</a>
+
+      <div class="language-selector">
+        <label>
+          <input type="radio" name="language" value="zh" checked> 中文
+        </label>
+        <label>
+          <input type="radio" name="language" value="en"> English
+        </label>
+      </div>
+
+      <script>
+        const languageSelector = document.querySelector('.language-selector');
+const languageRadios = languageSelector.querySelectorAll('input[type="radio"]');
+
+// 监听语言选择变化
+languageRadios.forEach((radio) => {
+    radio.addEventListener('change', function () {
+        if (this.checked) {
+            const selectedLanguage = this.value;
+            setLanguage(selectedLanguage);
+        }
+    });
+});
+
+// 设置语言并重定向到相应的页面
+function setLanguage(language) {
+    if (language === 'en') {
+        window.location.href = '/en'; // 替换为实际的英文页面路径
+    } else {
+        window.location.href = '/'; // 替换为实际的中文页面路径
+    }
+}
+
+
+      </script>
 
       <nav class="navbar">
         <a href="#" class="active item" style="--i: 1">主页</a>
