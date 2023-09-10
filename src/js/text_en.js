@@ -9,7 +9,7 @@ for (let i = 0; i < navbarItem.length; i++) {
 }
 
 var typed = new Typed(".multiple-text", {
-    strings: ['Add JavaAgents', "Launcher Translated", "Custom JDK", "OpenSource", "Custom JVM", "Add LunarCN Mod", "Free", "Cracked Account","Free Capes"],
+    strings: ['JavaAgents support', "own API", "Custom JDK", "Custom JVM args", "Add LunarCN Mod", "Free and open source", "Cracked Account","Free Capes"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
